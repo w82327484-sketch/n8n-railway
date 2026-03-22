@@ -9,4 +9,4 @@ ENV N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=false
 
 EXPOSE 5678
 
-CMD sh -c "n8n start --port=${PORT:-5678}"
+CMD sh -c "N8N_PORT=${PORT:-5678} n8n start"
